@@ -1,0 +1,5 @@
+// objのSDKとかあったらここにimportさせてください
+#import "OpenCVWrapper.h"
+
+
+

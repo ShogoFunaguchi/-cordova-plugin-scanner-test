@@ -1,0 +1,39 @@
+{
+  "name": "cordova-plugin-scanner-test",
+  "version": "0.0.1",
+  "description": "cordova-plugin-scanner-test",
+  "cordova_name":"cordova-plugin-scanner-test",
+  "cordova": {
+    "id": "cordova-plugin-scanner",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phi-jp/cordova-plugin-scanner.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phi-jp/cordova-plugin-scanner/issues"
+  },
+  "homepage": "https://github.com/phi-jp/cordova-plugin-scanner#readme",
+  "dependencies": {
+    "lodash": "^4.3.0",
+    "elementtree": "^0.1.6",
+    "plist": "xiangpingmeng/plist.js",
+    "xcode": "^1.0.0",
+    "colors": "^1.1.2",
+    "shelljs": "^0.7.0",
+    "tostr": "^0.1.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.6.0",
+    "got": "^6.5.0"
+  }
+
+}

@@ -1,0 +1,4 @@
+node_modules
+test/platforms
+test/plugins
+test/node_modules

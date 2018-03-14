@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-scanner-test" version="0.0.1">
+  <name>Cordova Plugin Scanner</name>
+  <description>Cordova plugin for OCR</description>
+
+  <hook type="after_prepare" src="hooks/afterPrepare.js"/>
+
+  <js-module src="www/scanner.js" name='Scanner' >
+    <clobbers target="scanner" />
+  </js-module>
+
+  <preference name="CAMERA_USAGE_DESCRIPTION" default="You have to give the permission which this service use the camera" />
+  <!-- iOS -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="Scanner">
+        <param name="onload" value="true" />
+        <param name="ios-package" value="Scanner" />
+      </feature>
+    </config-file>
+    
+    <source-file src="src/ios/AvCapture.swift" />
+    <header-file src="src/ios/OpenCV-Bridging-Header.h" />
+    <source-file src="src/ios/OpenCV.mm" />
+    <header-file src="src/ios/OpenCVWrapper.h" />
+    <source-file src="src/ios/OpenCVWrapper.mm" />
+    <source-file src="src/ios/PrefixHeaderForScanner.pch" />
+    <header-file src="src/ios/Scanner-Bridging-Header.h" />
+    <source-file src="src/ios/Scanner.swift" />
+
+    <dependency id="cordova-plugin-add-swift-support" version="1.7.1"/>
+    <preference name="UseSwiftLanguageVersion" default="4" />
+
+    <framework src="OpenCV2" type="podspec" spec="3.4.0"/>
+  </platform>
+</plugin>
