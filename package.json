@@ -1,8 +1,8 @@
 {
   "name": "cordova-plugin-scanner-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "cordova-plugin-scanner-test",
-  "cordova_name":"cordova-plugin-scanner-test",
+  "cordova_name": "cordova-plugin-scanner-test",
   "cordova": {
     "id": "cordova-plugin-scanner",
     "platforms": [
@@ -35,5 +35,4 @@
     "jshint": "^2.6.0",
     "got": "^6.5.0"
   }
-
 }
